@@ -46,6 +46,7 @@
     "@alilc/lowcode-engine": "^1.0.0",
     "@alilc/lowcode-engine-ext": "^1.0.0",
     "@alilc/lowcode-types": "^1.0.0",
+    "@alilc/lowcode-utils": "^1.0.18",
     "@types/events": "^3.0.0",
     "@types/react": "^16.8.3",
     "@types/react-dom": "^16.8.2",
@@ -55,6 +56,7 @@
     "build-plugin-moment-locales": "^0.1.0",
     "build-plugin-react-app": "^1.1.2",
     "fs-extra": "^10.0.1",
+    "regenerator-runtime": "^0.13.11",
     "tsconfig-paths-webpack-plugin": "^3.2.0"
   }
 }
