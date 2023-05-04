@@ -10,7 +10,7 @@ import CodeEditorPlugin from "@alilc/lowcode-plugin-code-editor";
 import ManualPlugin from "@alilc/lowcode-plugin-manual";
 import InjectPlugin from '@alilc/lowcode-plugin-inject';
 import SimulatorResizerPlugin from '@alilc/lowcode-plugin-simulator-select';
-import ComponentPanelPlugin from './plugins/plugin-component-panel';
+import ComponentPanelPlugin from '@alilc/lowcode-plugin-components-pane';
 import DefaultSettersRegistryPlugin from './plugins/plugin-default-setters-registry';
 import LoadIncrementalAssetsWidgetPlugin from './plugins/plugin-load-incremental-assets-widget';
 import SaveSamplePlugin from './plugins/plugin-save-sample';
@@ -100,12 +100,6 @@ async function registerPlugins() {
     enableCanvasLock: true,
     // 默认绑定变量
     supportVariableGlobally: true,
-    // simulatorUrl 在当 engine-core.js 同一个父路径下时是不需要配置的！！！
-    // 这里因为用的是 alifd cdn，在不同 npm 包，engine-core.js 和 react-simulator-renderer.js 是不同路径
-    simulatorUrl: [
-      'https://alifd.alicdn.com/npm/@alilc/lowcode-react-simulator-renderer@latest/dist/css/react-simulator-renderer.css',
-      'https://alifd.alicdn.com/npm/@alilc/lowcode-react-simulator-renderer@latest/dist/js/react-simulator-renderer.js'
-    ],
     requestHandlersMap: {
       fetch: createFetchHandler()
     },

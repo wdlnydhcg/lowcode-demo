@@ -4,6 +4,16 @@ demo 是一个组合内核、setter、插件、物料的示范工程，因为未
 ## 如何使用
 目前包含多个独立 demo 工程目录，每个 demo 目录都是一个独立的工程，代表一个特定的 demo 场景，可以选择其一单独使用。
 
+[推荐]使用yarn
+```bash
+git clone git@github.com:alibaba/lowcode-demo.git
+cd lowcode-demo
+cd demo-general
+yarn
+yarn run start
+```
+
+使用npm
 ```bash
 git clone git@github.com:alibaba/lowcode-demo.git
 cd lowcode-demo
@@ -17,7 +27,6 @@ npm run start
 - [general](https://lowcode-engine.cn/demo/demo-general/index.html)：此 demo 尽可能将引擎常用能力展示出来，在试用时建议使用该 demo 工程，其他 demo 均各有侧重展示内容。
 - [basic-fusion](https://lowcode-engine.cn/demo/demo-basic-fusion/index.html)：此 fusion 的元数据描述是很老的版本，只为了示意描述结构，请勿用于生产环境
 - [basic-antd](https://lowcode-engine.cn/demo/demo-basic-antd/index.html)
-- [basic-fusion-with-single-component](https://lowcode-engine.cn/demo/demo-basic-fusion-with-single-component/index.html)
 - [custom-initialization](https://lowcode-engine.cn/demo/demo-custom-initialization/index.html)
 - [node-extended-actions](https://lowcode-engine.cn/demo/demo-node-extended-actions/index.html)
 - [next-pro](https://lowcode-engine.cn/demo/demo-next-pro/index.html)
